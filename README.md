@@ -4,7 +4,12 @@
 - Ulzhan Tamyzgazina SE2325
 
 ## Contents
-
+1. [Overview](#overview)  
+2. [Prerequisites](#prerequisites)
+3. [ERC20 Token Implementation](erc20-token-implementation)
+4. [Setup and installation](#setup-and-installation)
+5. [License](#license)
+6. [References](#references)
 
 
 ## ERC20 Token Implementation
@@ -133,4 +138,8 @@ $ npx hardhat init
   Quit
 ```
 When Hardhat is run, it searches for the closest hardhat.config.js file starting from the current working directory.
+
+## License
+
+## References
 
