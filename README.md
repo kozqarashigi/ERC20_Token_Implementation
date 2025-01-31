@@ -6,10 +6,17 @@
 ## Contents
 1. [Overview](#overview)  
 2. [Prerequisites](#prerequisites)
-3. [ERC20 Token Implementation](erc20-token-implementation)
-4. [Setup and installation](#setup-and-installation)
+3. [ERC20 Token Implementation](#erc20-token-implementation)
+4. [Set Up and Installation](#setup-and-installation)
 5. [License](#license)
 6. [References](#references)
+
+## Overview
+
+## Prerequisites
+- Remix IDE
+- MetaMask Wallet
+- VScode
 
 
 ## ERC20 Token Implementation
