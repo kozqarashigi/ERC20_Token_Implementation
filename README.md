@@ -174,7 +174,96 @@ After writing down everything shown in src folder. We had results which shows th
 As you can see we checked our account address on etherScan and we can see the all the tranasctions, activities there.
 
 ## Test Cases
+First, we install testing dependencies:
+```bash
+npm install --save-dev chai ethers hardhat
+```
+
+We create a test file in the test/ folder:
+```bash
+mkdir test
+touch test/universityToken.test.js
+```
+
+We write tests using Chai (assertion library) and Hardhat's Ethers.js. Here you can see the test case before it was modified. In the test folder there is already modified version.
+```bash
+const { expect } = require("chai");
+const { ethers } = require("hardhat");
+
+describe("UniversityToken", function () {
+  let UniversityToken, universityToken, owner, addr1, addr2;
+
+  beforeEach(async function () {
+    [owner, addr1, addr2] = await ethers.getSigners();
+
+    UniversityToken = await ethers.getContractFactory("UniversityToken");
+    universityToken = await UniversityToken.deploy();
+  });
+
+  it("Should have correct name and symbol", async function () {
+    expect(await universityToken.name()).to.equal("UniversityToken");
+    expect(await universityToken.symbol()).to.equal("UT");
+  });
+
+  it("Should assign initial supply to owner", async function () {
+    const ownerBalance = await universityToken.balanceOf(owner.address);
+    expect(await universityToken.totalSupply()).to.equal(ownerBalance);
+  });
+
+  it("Should transfer tokens between accounts", async function () {
+    await universityToken.transfer(addr1.address, 50);
+    expect(await universityToken.balanceOf(addr1.address)).to.equal(50);
+  });
+
+  it("Should fail if sender doesn’t have enough balance", async function () {
+    await expect(universityToken.connect(addr1).transfer(addr2.address, 100))
+      .to.be.revertedWith("ERC20: transfer amount exceeds balance");
+  });
+
+  it("Should approve and allow spending of tokens", async function () {
+    await universityToken.approve(addr1.address, 100);
+    expect(await universityToken.allowance(owner.address, addr1.address)).to.equal(100);
+  });
+
+  it("Should allow an approved address to transfer on behalf", async function () {
+    await universityToken.approve(addr1.address, 100);
+    await universityToken.connect(addr1).transferFrom(owner.address, addr2.address, 50);
+    expect(await universityToken.balanceOf(addr2.address)).to.equal(50);
+  });
+});
+
+To run the tests:
+```bash
+npx hardhat test
+```
+
+```
+Output looked like this:
 ![Описание изображения](screens/npx_test1.png)
+
+For next test case we need to modify the smart contract:
+```bash
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract UniversityToken is ERC20 {
+    address public owner;
+
+    constructor(address _owner) ERC20("UniversityToken", "UT") {
+        owner = _owner;
+        _mint(_owner, 1000 * 10 ** decimals()); // Mint initial supply to owner
+    }
+}
+```
+🔹 Key Changes:
+
+- The constructor now takes _owner as a parameter.
+- The owner state variable is initialized `with _owner`.
+- The initial supply is minted `to _owner`
+
+After that, executed Hardhat test suite again. Output looked like this:
 ![Описание изображения](screens/npx_test2.png)
 
 ## Conclusion
