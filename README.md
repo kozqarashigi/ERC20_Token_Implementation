@@ -8,20 +8,8 @@
 
 
 ## ERC20 Token Implementation
-# **Ulzhan_Nurgul Token (UN) - ERC-20 Implementation**
 
-## **Project Overview**
-
-This project implements an **ERC-20 token** named **Ulzhan_Nurgul (UN)** using Solidity. The contract is deployed on the **Ethereum test network (Sepolia or Ganache)** and includes additional functions to retrieve transaction details.
-
-## **Installation & Deployment Guide**
-
-### **1. Setup Environment**
-
-- Use [Remix IDE](https://remix.ethereum.org/) for writing and deploying the smart contract.
-- Connect **MetaMask** to **Sepolia Testnet** or **Ganache**.
-
-### **2. Smart Contract Code**
+### **1. Smart Contract Code**
 
 Create a file **`MyToken.sol`** in Remix and paste the following Solidity code:
 
@@ -65,18 +53,18 @@ contract UniversityToken is ERC20 {
 }
 ```
 
-### **3. Compile the Contract**
+### **2. Compile the Contract**
 
 - Open **Remix IDE** → Select Solidity version **0.8.20**.
 - Click **Compile MyToken.sol**.
 
-### **4. Deploy the Contract**
+### **3. Deploy the Contract**
 
 - Go to **Deploy & Run Transactions**.
 - Select **Injected Provider - MetaMask** (for Sepolia) or **Ganache Provider**.
 - Click **Deploy** and confirm the transaction in MetaMask.
 
-### **5. Interacting with the Contract**
+### **4. Interacting with the Contract**
 
 After deploying, use Remix to interact with the contract:
 
@@ -97,6 +85,8 @@ transfer("receiver_address", amount)
 - **Last Transaction Timestamp:** `getLastTransactionTimestamp()`
 - **Last Sender Address:** `getLastSender()`
 - **Last Receiver Address:** `getLastReceiver()`
+
+
 
 ## Set Up and Installation
 
