@@ -237,7 +237,7 @@ To run the tests:
 npx hardhat test
 ```
 
-```
+
 Output looked like this:
 ![Описание изображения](screens/npx_test1.png)
 
