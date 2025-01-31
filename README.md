@@ -1,4 +1,4 @@
-# Assignment 3 Part 1
+# Assignment 3 
 ## Team members:
 - Nurgul Bassanova SE-2323
 - Ulzhan Tamyzgazina SE-2325
