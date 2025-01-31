@@ -8,15 +8,17 @@
 2. [Prerequisites](#prerequisites)
 3. [ERC20 Token Implementation](#erc20-token-implementation)
 4. [Set Up and Installation](#setup-and-installation)
-5. [License](#license)
-6. [References](#references)
+5. [Verify Deployment on Sepolia Explorer](#verify-deployment-on-sepolia-explorer)
+6. [Conclusion](#conclusion)
+7. [License](#license)
+8. [References](#references)
 
 ## Overview
 
 ## Prerequisites
 - Remix IDE
 - MetaMask Wallet
-- VScode
+- VScode 
 
 
 ## ERC20 Token Implementation
@@ -160,6 +162,24 @@ $ npx hardhat init
 ```
 When Hardhat is run, it searches for the closest hardhat.config.js file starting from the current working directory.
 
+After writing down everything shown in src folder. We had results which shows that it is deployed:
+![Описание изображения](screens/npx_hardhat_compile.png)
+
+![Описание изображения](screens/alchemy.png)
+
+![Описание изображения](screens/MyTokenDeployed.png)
+
+## Verify Deployment on Sepolia Explorer 
+![Описание изображения](screens/etherscan.png)
+
+As you can see we checked our account address on etherScan and we can see the all the tranasctions, activities there.
+
+## Conclusion
+In this assignment, we successfully developed and deployed an ERC-20 token (Ulzhan_Nurgul - UN) on the Sepolia Testnet using Solidity and Hardhat. The contract includes functions to track transaction details, such as the last sender, receiver, and timestamp.
+
+We also verified the contract on Etherscan, allowing public interaction and transparency. This project provided hands-on experience with smart contract development, deployment, and blockchain interaction using Remix, Hardhat, MetaMask, and Web3.js.
+
+This implementation serves as a strong foundation for understanding token standards and blockchain-based transactions. 
 ## License
 MIT License
 
