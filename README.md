@@ -163,7 +163,7 @@ $ npx hardhat init
 When Hardhat is run, it searches for the closest hardhat.config.js file starting from the current working directory.
 
 After writing down everything shown in src folder. We had results which shows that it is deployed:
-![Описание изображения](screens/npx_hardhat_compile.png)
+![Описание изображения](screens/npx hardhat compile.png)  
 
 ![Описание изображения](screens/alchemy.png)
 
