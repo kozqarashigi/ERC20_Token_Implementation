@@ -9,9 +9,10 @@
 3. [ERC20 Token Implementation](#erc20-token-implementation)
 4. [Set Up and Installation](#setup-and-installation)
 5. [Verify Deployment on Sepolia Explorer](#verify-deployment-on-sepolia-explorer)
-6. [Conclusion](#conclusion)
-7. [License](#license)
-8. [References](#references)
+6. [Test Cases](#test-cases)
+7. [Conclusion](#conclusion)
+8. [License](#license)
+9. [References](#references)
 
 ## Overview
 
@@ -171,6 +172,10 @@ After writing down everything shown in src folder. We had results which shows th
 ![Описание изображения](screens/etherscan.png)
 
 As you can see we checked our account address on etherScan and we can see the all the tranasctions, activities there.
+
+## Test Cases
+![Описание изображения](screens/npx_test1.png)
+![Описание изображения](screens/npx_test2.png)
 
 ## Conclusion
 In this assignment, we successfully developed and deployed an ERC-20 token (Ulzhan_Nurgul - UN) on the Sepolia Testnet using Solidity and Hardhat. The contract includes functions to track transaction details, such as the last sender, receiver, and timestamp.
