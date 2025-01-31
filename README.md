@@ -76,6 +76,8 @@ contract UniversityToken is ERC20 {
 - Select **Injected Provider - MetaMask** (for Sepolia) or **Ganache Provider**.
 - Click **Deploy** and confirm the transaction in MetaMask.
 
+![Описание изображения](screens/transact.png)
+
 ### **4. Interacting with the Contract**
 
 After deploying, use Remix to interact with the contract:
@@ -98,8 +100,20 @@ transfer("receiver_address", amount)
 - **Last Sender Address:** `getLastSender()`
 - **Last Receiver Address:** `getLastReceiver()`
 
+![Описание изображения](screens/all_functions.png)
+![Описание изображения](screens/1.png)
 
+![Описание изображения](screens/2.png)
 
+![Описание изображения](screens/3.png)
+
+![Описание изображения](screens/4.png)
+
+![Описание изображения](screens/transact2.png)
+
+![Описание изображения](screens/name.png)
+
+We can check that it's our ERC20 Token by calling these functions. Output shows the name, symbol and total supply as we provided in our smart contract.
 ## Set Up and Installation
 
 ### Setting up the environment
