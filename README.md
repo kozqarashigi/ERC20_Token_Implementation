@@ -1,7 +1,7 @@
 # Assignment 3 Part 1
 ## Team members:
-- Nurgul Bassanova
-- Ulzhan Tamyzgazina
+- Nurgul Bassanova SE-2323
+- Ulzhan Tamyzgazina SE2325
 
 ## Contents
 
