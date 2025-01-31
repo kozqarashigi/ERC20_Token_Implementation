@@ -298,5 +298,7 @@ SOFTWARE.
 ## References
 - https://www.youtube.com/watch?v=-5j6Ho0Bkfk
 - https://www.youtube.com/watch?v=o9Ux3xDrkIo
+- https://hardhat.org/tutorial
+- https://hardhat.org/tutorial/testing-contracts
 
 
