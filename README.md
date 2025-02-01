@@ -15,6 +15,7 @@
 9. [References](#references)
 
 ## Overview
+This assignment focuses on implementing, modifying, testing, and deploying an ERC-20 token smart contract using Solidity and Hardhat. The smart contract, originally developed in Assignment 3, Part 1, has been updated to accept an input parameter in its constructor, enhancing its flexibility and functionality. The assignment also includes writing comprehensive test cases to verify the correctness of the smart contract's operations and ensuring its successful deployment on the Sepolia Testnet.
 
 ## Prerequisites
 - Remix IDE
@@ -184,7 +185,7 @@ We create a test file in the test/ folder:
 mkdir test
 touch test/universityToken.test.js
 ```
-
+To ensure the contract works correctly, test cases were written using Hardhat.
 We write tests using Chai (assertion library) and Hardhat's Ethers.js. Here you can see the test case before it was modified. In the test folder there is already modified version.
 ```bash
 const { expect } = require("chai");
