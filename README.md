@@ -104,7 +104,6 @@ transfer("receiver_address", amount)
 - **Last Sender Address:** `getLastSender()`
 - **Last Receiver Address:** `getLastReceiver()`
 
-![Описание изображения](screens/all_functions.png)
 ![Описание изображения](screens/1.png)
 
 ![Описание изображения](screens/2.png)
@@ -116,6 +115,12 @@ transfer("receiver_address", amount)
 ![Описание изображения](screens/transact2.png)
 
 ![Описание изображения](screens/name.png)
+
+![Описание изображения](screens/transfer.png)
+
+![Описание изображения](screens/functions2.png)
+
+![Описание изображения](screens/functions3.png)
 
 We can check that it's our ERC20 Token by calling these functions. Output shows the name, symbol and total supply as we provided in our smart contract.
 ## Set Up and Installation
