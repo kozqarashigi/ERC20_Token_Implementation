@@ -269,7 +269,7 @@ contract UniversityToken is ERC20 {
 
     constructor(address _owner) ERC20("UniversityToken", "UT") {
         owner = _owner;
-        _mint(_owner, 1000 * 10 ** decimals()); // Mint initial supply to owner
+        _mint(_owner, 2000 * 10 ** decimals()); // Mint initial supply to owner
     }
 }
 ```
