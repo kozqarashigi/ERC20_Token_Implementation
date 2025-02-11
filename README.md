@@ -314,10 +314,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## References
-- Kacharla, B. (n.d.). Using Ganache with Remix and Metamask. Medium. Retrieved from https://medium.com/@kacharlabhargav21/using-ganachewith-remix-and-metamask-446fe5748ccf
-- Truffle Suite. (n.d.). Ganache blockchain. Retrieved from https://trufflesuite.com/ganache/
-- Web3.js. (n.d.). Deploying and interacting with smart contracts. Retrieved from https://docs.web3js.org/guides/smart_contracts/smart_contracts_guide
-- Web3.js. (n.d.). Documentation to Web3.js. Retrieved from https://docs.web3js.org/
 - https://www.youtube.com/watch?v=-5j6Ho0Bkfk
 - https://www.youtube.com/watch?v=o9Ux3xDrkIo
 - https://hardhat.org/tutorial
